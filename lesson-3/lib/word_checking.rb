@@ -1,5 +1,5 @@
 def word_checking(word)
-  word[-1].upcase == "S" && word[-2].upcase == "C" ? 2 ** word.length : word.reverse
+  word[-2..-1].upcase == "CS" ? 2 ** word.length : word.reverse
 end
 
 

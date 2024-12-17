@@ -1,10 +1,9 @@
-def ask_for_count()
+def ask_for_count
   print "Сколько покемонов добавить? "
-  return gets.chomp.to_i
+  gets.chomp.to_i
 end
 
 def ask_for_details(index)
-
   puts "#{index + 1}-й Покемон:"
 
   print "Имя: "
@@ -13,15 +12,13 @@ def ask_for_details(index)
   print "Цвет: "
   color = gets.chomp
 
-  return {
+  {
     'name' => name,
     'color' => color
   }
-
 end
 
-def add_pokemon()
-
+def add_pokemon
   pokemons = []
 
   count = ask_for_count()
@@ -32,6 +29,5 @@ def add_pokemon()
   
   end
 
-  return pokemons
-  
+  pokemons
 end
